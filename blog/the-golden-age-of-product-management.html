@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Golden Age of Product Management</title>
+<meta name="description" content="Every product manager is a founder now. Act like it.">
+<meta property="og:title" content="The Golden Age of Product Management">
+<meta property="og:description" content="Every product manager is a founder now. Act like it.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://jayhjenkins.github.io/stuff-jay-likes-blog/images/hero.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav>
+    <a href="/" class="site-name">Stuff Jay Likes</a>
+    <a href="/blog/" class="active">Blog</a>
+    <a href="/projects/">Projects</a>
+  </nav>
+</header>
+
+<article>
+
+<a href="/blog/" class="back-link">&larr; All posts</a>
+
+<h1>The Golden Age of Product Management</h1>
+<div class="subtitle">Jay Jenkins, April 2026</div>
+
+<hr>
+
+<p class="lede-first">Product management is dead. Long live product management.</p>
+
+<figure>
+  <img src="../images/hero.png" alt="A solitary figure standing in a vast dark ocean at dawn, light breaking through heavy clouds on the horizon">
+</figure>
+
+<p class="lede">Welcome to the golden age of the PM. Not the golden age of product ownership, tickets, refinement, or scrum. Not the golden age of ceremonies and sprint artifacts and documents and dashboards. No, that simulacrum is dead on arrival. Marty Cagan does not mince words: product owners are &ldquo;sitting ducks&rdquo; for AI. He&rsquo;s encouraging every product owner he knows to upskill fast. He&rsquo;s right. 80%+ of what a traditional product owner does&thinsp;&mdash;&thinsp;writing user stories, estimating complexity, monitoring burn-downs, running standups and retros&thinsp;&mdash;&thinsp;is history. And if that describes what you do and the &ldquo;value&rdquo; you provide, you need to hear this clearly: the clock is running out.</p>
+
+<p>But here&rsquo;s what the doomsayers miss. The elimination of the product owner is not the death of product management. It is its liberation. Cagan calls this &ldquo;The Era of the Product Creator.&rdquo; And he&rsquo;s not talking about a distant future. He says the new generation of AI tools is empowering a much broader set of people to step into the role of passionate, visionary product leaders&thinsp;&mdash;&thinsp;and that this represents a fundamental shift.</p>
+
+<hr>
+
+<h2>The Cost of Building Has Collapsed. The Cost of Being Wrong Has Not.</h2>
+
+<p>The single most consequential fact in technology right now is that software is free to build. Sam Altman describes it as &ldquo;intelligence too cheap to meter,&rdquo; and he&rsquo;s not speaking theoretically. The cost per unit of AI intelligence has dropped by more than 10x every year for five years running. The data is unambiguous. By the end of 2026, Altman predicts an individual spending $1,000 on inference will complete software that would have previously required an entire team. His prediction for the decade: &ldquo;<em>Anyone</em> in 2035 should be able to marshal the intellectual capacity equivalent to <em>everyone</em> in 2025.&rdquo;</p>
+
+<!-- Chart: Cost per unit of intelligence -->
+<div class="chart-container">
+  <div class="chart-title">The Cost Per Unit Intelligence Approaches Zero</div>
+  <svg viewBox="0 0 580 320" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="580" height="320" fill="#1a1a1a" rx="4"/>
+
+    <!-- Grid area: left=70, right=540, top=30, bottom=270 -->
+    <!-- Horizontal gridlines (log scale: $100, $10, $1, $0.10) -->
+    <line x1="70" y1="54" x2="540" y2="54" stroke="#2a2a2a" stroke-width="1"/>
+    <line x1="70" y1="114" x2="540" y2="114" stroke="#2a2a2a" stroke-width="1"/>
+    <line x1="70" y1="174" x2="540" y2="174" stroke="#2a2a2a" stroke-width="1"/>
+    <line x1="70" y1="234" x2="540" y2="234" stroke="#2a2a2a" stroke-width="1"/>
+
+    <!-- Y-axis labels -->
+    <text x="62" y="38" fill="#666" font-family="'Source Serif 4', Georgia, serif" font-size="12" text-anchor="end">$100</text>
+    <text x="62" y="58" fill="#666" font-family="'Source Serif 4', Georgia, serif" font-size="12" text-anchor="end">$10</text>
+    <text x="62" y="118" fill="#666" font-family="'Source Serif 4', Georgia, serif" font-size="12" text-anchor="end">$1</text>
+    <text x="62" y="178" fill="#666" font-family="'Source Serif 4', Georgia, serif" font-size="12" text-anchor="end">$0.10</text>
+    <text x="62" y="238" fill="#666" font-family="'Source Serif 4', Georgia, serif" font-size="12" text-anchor="end">$0.01</text>
+
+    <!-- X-axis labels -->
+    <text x="117" y="286" fill="#888" font-family="'Source Serif 4', Georgia, serif" font-size="13" text-anchor="middle">2022</text>
+    <text x="234" y="286" fill="#888" font-family="'Source Serif 4', Georgia, serif" font-size="13" text-anchor="middle">2023</text>
+    <text x="352" y="286" fill="#888" font-family="'Source Serif 4', Georgia, serif" font-size="13" text-anchor="middle">2024</text>
+    <text x="469" y="286" fill="#888" font-family="'Source Serif 4', Georgia, serif" font-size="13" text-anchor="middle">2025</text>
+
+    <!--
+      Log scale mapping (Y pixels):
+      Plot area: y=30 (top, $1000) to y=270 (bottom, $0.001)
+      Each decade = 60px
+      $100  = 30 + 60*1 = 54   (one decade below $1000)
+      Actually let me recalculate properly.
+
+      Range: $100 at top (y=34) to $0.01 at bottom (y=274)
+      That's 4 decades over 240px = 60px per decade
+      y = 34 + (log10(100) - log10(value)) * 60
+      y = 34 + (2 - log10(value)) * 60
+
+      $120: log10(120)=2.079, y = 34 + (2-2.079)*60 = 34 - 4.7 = 29
+      $30:  log10(30)=1.477,  y = 34 + (2-1.477)*60 = 34 + 31.4 = 65
+      $2.50: log10(2.5)=0.398, y = 34 + (2-0.398)*60 = 34 + 96.1 = 130
+      $0.40: log10(0.4)=-0.398, y = 34 + (2+0.398)*60 = 34 + 143.9 = 178
+      $0.07: log10(0.07)=-1.155, y = 34 + (2+1.155)*60 = 34 + 189.3 = 223
+
+      Data points (x positions evenly spaced):
+      2022: x=117, y=29  ($120)
+      2023: x=234, y=65  ($30)
+      2024: x=352, y=130 ($2.50)
+      2025: x=469, y=178 ($0.40)
+      Projected 2026: x=540, y=223 ($0.07) (edge of chart, partial year)
+    -->
+
+    <!-- Shaded area under curve -->
+    <path d="M117,29 L234,65 L352,130 L469,178 L469,270 L352,270 L234,270 L117,270 Z"
+          fill="url(#areaGradient)" opacity="0.4"/>
+
+    <defs>
+      <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#c9943e" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="#c9943e" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Line connecting data points -->
+    <polyline points="117,29 234,65 352,130 469,178"
+              fill="none" stroke="#c9943e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Projected dashed line to 2026 -->
+    <line x1="469" y1="178" x2="540" y2="223"
+          stroke="#c9943e" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+
+    <!-- Data points -->
+    <circle cx="117" cy="29" r="5" fill="#c9943e" stroke="#1a1a1a" stroke-width="2"/>
+    <circle cx="234" cy="65" r="5" fill="#c9943e" stroke="#1a1a1a" stroke-width="2"/>
+    <circle cx="352" cy="130" r="5" fill="#c9943e" stroke="#1a1a1a" stroke-width="2"/>
+    <circle cx="469" cy="178" r="5" fill="#c9943e" stroke="#1a1a1a" stroke-width="2"/>
+
+    <!-- Projected point -->
+    <circle cx="540" cy="223" r="4" fill="none" stroke="#c9943e" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.6"/>
+
+    <!-- Data labels -->
+    <text x="117" y="22" fill="#e0e0e0" font-family="'Source Serif 4', Georgia, serif" font-size="11" text-anchor="middle" font-weight="600">$120</text>
+    <text x="234" y="58" fill="#e0e0e0" font-family="'Source Serif 4', Georgia, serif" font-size="11" text-anchor="middle" font-weight="600">$30</text>
+    <text x="352" y="123" fill="#e0e0e0" font-family="'Source Serif 4', Georgia, serif" font-size="11" text-anchor="middle" font-weight="600">$2.50</text>
+    <text x="469" y="171" fill="#e0e0e0" font-family="'Source Serif 4', Georgia, serif" font-size="11" text-anchor="middle" font-weight="600">$0.40</text>
+    <text x="540" y="216" fill="#999" font-family="'Source Serif 4', Georgia, serif" font-size="10" text-anchor="middle" font-style="italic">~$0.07</text>
+
+    <!-- Annotation labels on data points -->
+    <text x="117" y="50" fill="#777" font-family="'Source Serif 4', Georgia, serif" font-size="9" text-anchor="middle">text-davinci</text>
+    <text x="234" y="82" fill="#777" font-family="'Source Serif 4', Georgia, serif" font-size="9" text-anchor="middle">GPT-4</text>
+    <text x="352" y="147" fill="#777" font-family="'Source Serif 4', Georgia, serif" font-size="9" text-anchor="middle">GPT-4o</text>
+    <text x="469" y="195" fill="#777" font-family="'Source Serif 4', Georgia, serif" font-size="9" text-anchor="middle">frontier &rsquo;25</text>
+    <text x="540" y="240" fill="#555" font-family="'Source Serif 4', Georgia, serif" font-size="9" text-anchor="middle" font-style="italic">2026 est.</text>
+
+    <!-- 150x annotation -->
+    <text x="305" y="306" fill="#555" font-family="'Source Serif 4', Georgia, serif" font-size="10" text-anchor="middle">GPT-4 to GPT-4o: 150x price drop in 14 months &mdash; Sam Altman</text>
+
+    <!-- Axes -->
+    <line x1="70" y1="270" x2="540" y2="270" stroke="#444" stroke-width="1"/>
+    <line x1="70" y1="30" x2="70" y2="270" stroke="#444" stroke-width="1"/>
+  </svg>
+  <div class="chart-source">Sources: OpenAI API pricing history; Sam Altman, &ldquo;Three Observations,&rdquo; Feb 2025. Y-axis: log scale.</div>
+</div>
+
+<p>The numbers on the ground confirm it. Garry Tan, president of Y Combinator, reports that for a quarter of the current YC batch, 95% of the code was written by AI. You don&rsquo;t need a team of 50 or 100 engineers anymore. Amjad Masad, CEO of Replit, tells the story of a customer who built an ERP automation for $400 that a vendor quoted at $150,000. Andrew Ng, the man who built Google Brain, says he and his colleagues now build on a weekend what used to take six engineers three months. Dario Amodei, the CEO of Anthropic, says engineers inside his own company don&rsquo;t write any code anymore. The models do software engineering end to end.</p>
+
+<p>The constraint that defined software development for fifty years, the scarcity of engineering time, is gone. Obliterated. The dam has burst. Every product organization on Earth was designed around this constraint. The entire apparatus of product management&thinsp;&mdash;&thinsp;roadmaps, prioritization frameworks, sprint planning, MVP scoping&thinsp;&mdash;&thinsp;exists because building was expensive.</p>
+
+<p><em>That world is gone.</em></p>
+
+<!-- Inversion image: strategy/execution hourglass -->
+<figure>
+  <img src="../images/inversion.png" alt="An hourglass tipped on its side, labeled Strategy at the top and Execution at the bottom, with golden sand flowing from strategy into execution">
+</figure>
+
+<p>When building is nearly free, the strategic calculus inverts completely. The risk is no longer that you build too much. The risk is that you build too little. You build the wrong thing. The risk is that you aim too low, scope too conservatively, and waste the most transformative moment in the history of software on incremental improvements that don&rsquo;t move the needle. Your old MVP? That janky version of your vision that took months to fund and build? That&rsquo;s a prototype now. Takes 10 minutes.</p>
+
+<p>The new MVP is the fully realized product, because building is fast and code is cheap. Scope is no longer something you cut. It&rsquo;s something you sequence&thinsp;&mdash;&thinsp;foundation, expansion, polish&thinsp;&mdash;&thinsp;and you ship all of it.</p>
+
+<p>You boil the ocean.</p>
+
+<hr>
+
+<h2>What Product Management Was. What It Actually Is.</h2>
+
+<p>For two decades, Scrum and Agile bastardized product management into something it was never supposed to be. They turned the product manager into a human router. You were the glue person. The intermediary who made sure marketing talked to sales and engineering talked to design. You translated requirements from one group to another. You managed the backlog. You were an orchestration layer (and tbh the average PM was not that great of one either).</p>
+
+<p>That orchestration layer is now agentic. Andrej Karpathy, the man who ran Tesla&rsquo;s AI, named the paradigm shift earlier this year. He calls it &ldquo;agentic engineering&rdquo;: the new default is that you are not writing the code directly 99% of the time. You are orchestrating agents who do, and acting as oversight. He says vibe coding will &ldquo;terraform software and alter job descriptions.&rdquo; He&rsquo;s right. And it&rsquo;s not just software engineering being terraformed. It&rsquo;s every process-oriented role in the building chain.</p>
+
+<p>The knowledge and communication that used to require a human in the room is now artifact-driven&thinsp;&mdash;&thinsp;persistent, structured, living <em>context</em> that travels between teams and between AI agents without losing fidelity. The context that used to live in a product manager&rsquo;s head now lives in systems that don&rsquo;t forget, don&rsquo;t get tired, and don&rsquo;t lose the thread between Monday&rsquo;s standup and Thursday&rsquo;s design review.</p>
+
+<p>So what remains? What is the job when the tactical, the administrative, and the orchestration are handled by machines?</p>
+
+<p>What remains is the hardest, most valuable thing in business: the ability to see what no one else sees and have the conviction to go build it. The job is zero to one to scale. It&rsquo;s outcomes. It&rsquo;s ARR and gross margin, it&rsquo;s quality and CSAT, it&rsquo;s finding and fortifying the moat. It always has been, but now it&rsquo;s nothing else.</p>
+
+<!-- Router-to-founder transition image -->
+<figure>
+  <img src="../images/router.png" alt="Split image: on the left, a figure tangled in strings connecting dozens of overlapping circles; on the right, the same figure standing alone on an open plain facing a vast horizon">
+</figure>
+
+<hr>
+
+<h2>Every Product Manager Is a Founder</h2>
+
+<p>This is the thesis. Not metaphorically. Not aspirationally. Literally.</p>
+
+<p>Sam Altman put it best: &ldquo;For a long time, technical people in the startup industry have made fun of &lsquo;the idea guys&rsquo;&thinsp;&mdash;&thinsp;people who had an idea and were looking for a team to build it. It now looks to me like they are about to have their day in the sun.&rdquo; He&rsquo;s betting on the first one-person billion-dollar company. Marc Andreessen says the endgame is &ldquo;entire companies where the founder oversees an army of AI bots.&rdquo;</p>
+
+<p>The role of the product manager has elevated to what it was always supposed to be. You are an entrepreneur. Your job is not to manage a backlog. Your job is not to represent the customer to the engineers. Your job is damn sure not writing tickets. Your job is to find the strategic insight that drives revenue, market share, and competitive dominance&thinsp;&mdash;&thinsp;and then to point the entire machine at it. Your job is results.</p>
+
+<p>Andrew Ng sees the shift already in motion. For the first time in his career, one of his teams proposed a headcount plan with twice as many product managers as engineers. The bottleneck has moved. It&rsquo;s no longer &ldquo;can we build it?&rdquo; It&rsquo;s &ldquo;do we know what to build, and are we being ambitious enough about it?&rdquo; Lenny Rachitsky says it directly: &ldquo;Product managers are the best-positioned role in tech to thrive in a world of AI.&rdquo; He goes further: &ldquo;In fact, many jobs will start to look more like product management.&rdquo; The most valued skill set is shifting from building to knowing what to build, giving clear instructions for what to build, and having the taste to know if what you&rsquo;ve created is great.</p>
+
+<!-- Chart: PM-to-Engineer Ratio -->
+<div class="chart-container">
+  <div class="chart-title">The bottleneck has moved</div>
+  <svg viewBox="0 0 580 200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="580" height="200" fill="#1a1a1a" rx="4"/>
+
+    <!-- Traditional ratio: 1 PM to 4-8 Engineers -->
+    <text x="30" y="52" fill="#888" font-family="'Source Serif 4', Georgia, serif" font-size="12" font-weight="600">TRADITIONAL</text>
+
+    <!-- PM icon -->
+    <circle cx="170" cy="46" r="10" fill="#c9943e" opacity="0.9"/>
+    <text x="170" y="50" fill="#1a1a1a" font-family="'Source Serif 4', Georgia, serif" font-size="9" text-anchor="middle" font-weight="700">PM</text>
+
+    <text x="196" y="50" fill="#555" font-family="'Source Serif 4', Georgia, serif" font-size="16">:</text>
+
+    <!-- Engineer icons (6) -->
+    <circle cx="220" cy="46" r="10" fill="#4a6a8a" opacity="0.8"/>
+    <circle cx="244" cy="46" r="10" fill="#4a6a8a" opacity="0.8"/>
+    <circle cx="268" cy="46" r="10" fill="#4a6a8a" opacity="0.8"/>
+    <circle cx="292" cy="46" r="10" fill="#4a6a8a" opacity="0.8"/>
+    <circle cx="316" cy="46" r="10" fill="#4a6a8a" opacity="0.7"/>
+    <circle cx="340" cy="46" r="10" fill="#4a6a8a" opacity="0.6"/>
+
+    <text x="220" y="50" fill="#c8d8e8" font-family="'Source Serif 4', Georgia, serif" font-size="8" text-anchor="middle" font-weight="600">ENG</text>
+    <text x="244" y="50" fill="#c8d8e8" font-family="'Source Serif 4', Georgia, serif" font-size="8" text-anchor="middle" font-weight="600">ENG</text>
+    <text x="268" y="50" fill="#c8d8e8" font-family="'Source Serif 4', Georgia, serif" font-size="8" text-anchor="middle" font-weight="600">ENG</text>
+    <text x="292" y="50" fill="#c8d8e8" font-family="'Source Serif 4', Georgia, serif" font-size="8" text-anchor="middle" font-weight="600">ENG</text>
+    <text x="316" y="50" fill="#c8d8e8" font-family="'Source Serif 4', Georgia, serif" font-size="8" text-anchor="middle" font-weight="600">ENG</text>
+    <text x="340" y="50" fill="#c8d8e8" font-family="'Source Serif 4', Georgia, serif" font-size="8" text-anchor="middle" font-weight="600">ENG</text>
+
+    <text x="380" y="50" fill="#666" font-family="'Source Serif 4', Georgia, serif" font-size="12" font-style="italic">1 : 4&ndash;8</text>
+
+    <!-- Divider -->
+    <line x1="30" y1="86" x2="550" y2="86" stroke="#333" stroke-width="1"/>
+
+    <!-- Arrow -->
+    <text x="290" y="110" fill="#555" font-family="'Source Serif 4', Georgia, serif" font-size="20" text-anchor="middle">&darr;</text>
+
+    <!-- New ratio: 2 PMs to 1 Engineer (Ng's proposal) -->
+    <text x="30" y="152" fill="#c9943e" font-family="'Source Serif 4', Georgia, serif" font-size="12" font-weight="600">NG&rsquo;S PROPOSAL</text>
+
+    <!-- PM icons (2) -->
+    <circle cx="170" cy="146" r="10" fill="#c9943e" opacity="0.9"/>
+    <circle cx="194" cy="146" r="10" fill="#c9943e" opacity="0.9"/>
+
+    <text x="170" y="150" fill="#1a1a1a" font-family="'Source Serif 4', Georgia, serif" font-size="9" text-anchor="middle" font-weight="700">PM</text>
+    <text x="194" y="150" fill="#1a1a1a" font-family="'Source Serif 4', Georgia, serif" font-size="9" text-anchor="middle" font-weight="700">PM</text>
+
+    <text x="218" y="150" fill="#555" font-family="'Source Serif 4', Georgia, serif" font-size="16">:</text>
+
+    <!-- Engineer icon (1) + agents -->
+    <circle cx="242" cy="146" r="10" fill="#4a6a8a" opacity="0.8"/>
+    <text x="242" y="150" fill="#c8d8e8" font-family="'Source Serif 4', Georgia, serif" font-size="8" text-anchor="middle" font-weight="600">ENG</text>
+
+    <text x="268" y="150" fill="#555" font-family="'Source Serif 4', Georgia, serif" font-size="14">+</text>
+
+    <!-- Agent icons -->
+    <rect x="284" y="136" width="20" height="20" rx="3" fill="#333" stroke="#555" stroke-width="1"/>
+    <rect x="308" y="136" width="20" height="20" rx="3" fill="#333" stroke="#555" stroke-width="1"/>
+    <rect x="332" y="136" width="20" height="20" rx="3" fill="#333" stroke="#555" stroke-width="1"/>
+    <rect x="356" y="136" width="20" height="20" rx="3" fill="#333" stroke="#555" stroke-width="1" opacity="0.6"/>
+    <rect x="380" y="136" width="20" height="20" rx="3" fill="#333" stroke="#555" stroke-width="1" opacity="0.4"/>
+
+    <text x="294" y="150" fill="#888" font-family="'Source Serif 4', Georgia, serif" font-size="7" text-anchor="middle">AI</text>
+    <text x="318" y="150" fill="#888" font-family="'Source Serif 4', Georgia, serif" font-size="7" text-anchor="middle">AI</text>
+    <text x="342" y="150" fill="#888" font-family="'Source Serif 4', Georgia, serif" font-size="7" text-anchor="middle">AI</text>
+    <text x="366" y="150" fill="#777" font-family="'Source Serif 4', Georgia, serif" font-size="7" text-anchor="middle">AI</text>
+    <text x="390" y="150" fill="#666" font-family="'Source Serif 4', Georgia, serif" font-size="7" text-anchor="middle">AI</text>
+
+    <text x="420" y="150" fill="#c9943e" font-family="'Source Serif 4', Georgia, serif" font-size="12" font-style="italic">2 : 0.5 + agents</text>
+
+    <!-- Source -->
+    <text x="290" y="190" fill="#555" font-family="'Source Serif 4', Georgia, serif" font-size="10" text-anchor="middle" font-style="italic">Andrew Ng, AI Startup School, August 2025</text>
+  </svg>
+</div>
+
+<p>Shreyas Doshi, who built products at Stripe, Twitter, and Google, argues that the only lasting moat is what he calls Product Sense&thinsp;&mdash;&thinsp;deep empathy, strategic thinking, great taste, and the ability to simulate outcomes before they happen. Tools have never been a significant source of competitive advantage in product success, he says. That doesn&rsquo;t change with AI tools. What changes is that the people with Product Sense now have leverage that was previously unimaginable.</p>
+
+<p>This is the golden age because the people who were always doing the real work of product management, the deep discovery, the strategic positioning, the market insight, the creative leaps, those people just got handed a superpower. Cagan himself says it: &ldquo;For those that really know what product discovery is, this is an amazing era. It has never been better.&rdquo;</p>
+
+<hr>
+
+<h2>Boil the Ocean</h2>
+
+<p>Here is what changes in practice. Stop optimizing for what you can cut. Start optimizing for how ambitious you can be from day one.</p>
+
+<p>Tobi L&uuml;tke, CEO of Shopify, wrote an internal memo that went public this year. He described watching his best people tackle &ldquo;implausible tasks, ones we wouldn&rsquo;t even have chosen to tackle before,&rdquo; with AI&thinsp;&mdash;&thinsp;and getting 100x the output. He now requires any manager requesting new headcount to first prove that AI cannot do the job. That&rsquo;s not cost-cutting. That&rsquo;s a recognition that the ceiling on what a small team can accomplish has been utterly and completely redefined.</p>
+
+<p>Discovery should be exhaustive, not expedient. Talk to every customer. Pull every dataset. Prototype relentlessly. Stress-test every assumption. Model the business case. This is not waterfall. This is shifting left. This is going so deep into the problem space that when you point the machine at it, the machine has perfect clarity on where to go.</p>
+
+<p>The artifacts you produce&thinsp;&mdash;&thinsp;the press releases, the FAQs, the API designs, the PRDs, the one-pagers, the product reviews&thinsp;&mdash;&thinsp;these are not bureaucratic overhead. They are persistent memory. They are how accumulated intelligence survives context rot in a world where AI agents process your strategy. Every artifact serves a specific audience, human and machine, across the entire organization. Every artifact compounds the knowledge that came before it. And every artifact can be regenerated, iterated, and stress-tested at near-zero cost.</p>
+
+<p>The pipeline is cheap. Run it often. Run it on different inputs. Compare the outputs. Be relentless. The old excuse&thinsp;&mdash;&thinsp;&ldquo;we don&rsquo;t have time to think that deeply&rdquo;&thinsp;&mdash;&thinsp;is dead. We have effectively infinite resources at the CLI. Everything is now parallel by default. The only question is whether you have the ambition to use it.</p>
+
+<hr>
+
+<h2>The Call to Arms</h2>
+
+<p>Every team is a startup right now. Every product manager, whether you sit inside a five-person company or a five-thousand-person enterprise, has the same opportunity that the best founders of previous generations had. The tools to build are essentially free. The agents to execute are getting better by the month. The orchestration layer that used to require an army of coordinators is automated.</p>
+
+<p>What is not automated&thinsp;&mdash;&thinsp;what cannot be automated&thinsp;&mdash;&thinsp;is the vision. The conviction. The ability to look at a market, see the right move, and then GO. The courage to define scope that is appropriately ambitious rather than defensively minimal. The judgment to know where your team is uniquely positioned to win and the will to go all the way.</p>
+
+<p>You are the coach and the general manager. The agents are the players. But a team without a strategy is just a collection of talented individuals running in different directions. Your job is to drive and direct; to ramp up the ambition, to align with the customer, the market, and with what makes your team dangerous.</p>
+
+<p>Hierarchies are flattening. Gatekeeping is dissolving. It doesn&rsquo;t matter if you carry the title of product manager, head of design, or principal engineer. What matters is whether you can see the strategic insight and drive the machine toward it. This role has never been about the title. It&rsquo;s about the function. And right now, that function&thinsp;&mdash;&thinsp;the founder function, the entrepreneur function&thinsp;&mdash;&thinsp;is the single most valuable thing in any organization. What matters is the results.</p>
+
+<p>This is not the future of product management. This <em>is</em> product management. The product managers who understand this will define the next decade of technology. The ones who don&rsquo;t will be replaced by the ones who do (and their robots).</p>
+
+<p class="closing">Boil the ocean. The water&rsquo;s already hot.</p>
+
+<footer>
+<p>Jay Jenkins &middot; April 2026</p>
+</footer>
+
+</article>
+</body>
+</html>

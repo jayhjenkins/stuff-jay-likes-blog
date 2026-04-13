@@ -1,0 +1,447 @@
+/* ==========================================================================
+   Stuff Jay Likes — Shared Styles
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #d4d4d4;
+  background-color: #141414;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background: rgba(138, 180, 248, 0.25);
+  color: #fff;
+}
+
+/* ==========================================================================
+   Site Header / Navigation
+   ========================================================================== */
+
+.site-header {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 0;
+}
+
+.site-header nav {
+  display: flex;
+  align-items: baseline;
+  gap: 1.8rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1.2rem;
+}
+
+.site-header .site-name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  text-decoration: none;
+  border-bottom: none;
+  letter-spacing: -0.01em;
+  margin-right: auto;
+}
+
+.site-header .site-name:hover {
+  color: #c9943e;
+  border-bottom: none;
+}
+
+.site-header nav a {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #888;
+  text-decoration: none;
+  border-bottom: none;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.site-header nav a:hover {
+  color: #d4d4d4;
+  border-bottom: none;
+}
+
+.site-header nav a.active {
+  color: #c9943e;
+}
+
+/* ==========================================================================
+   Main Content Area
+   ========================================================================== */
+
+.content {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem;
+}
+
+/* ==========================================================================
+   Homepage
+   ========================================================================== */
+
+.hero {
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f0f0f0;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.hero .tagline {
+  font-size: 1.15rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #888;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.hero .intro {
+  font-size: 1rem;
+  color: #aaa;
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   Blog Roll / Post Listing
+   ========================================================================== */
+
+.section-heading {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 2.2rem;
+}
+
+.post-list li:last-child {
+  margin-bottom: 0;
+}
+
+.post-list a {
+  text-decoration: none;
+  border-bottom: none;
+  display: block;
+}
+
+.post-list a:hover {
+  border-bottom: none;
+}
+
+.post-list a:hover .post-title {
+  color: #c9943e;
+}
+
+.post-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #e8e8e8;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.005em;
+  transition: color 0.2s;
+}
+
+.post-date {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.4rem;
+}
+
+.post-excerpt {
+  font-size: 0.95rem;
+  color: #999;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Projects Page
+   ========================================================================== */
+
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f0f0f0;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.page-subtitle {
+  font-size: 1.05rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #888;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.02em;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  margin-bottom: 2.2rem;
+  padding-bottom: 2.2rem;
+  border-bottom: 1px solid #262626;
+}
+
+.project-list li:last-child {
+  border-bottom: none;
+}
+
+.project-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e8e8e8;
+  margin-bottom: 0.3rem;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  color: #999;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Article (Blog Post) Styles
+   ========================================================================== */
+
+article {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem;
+}
+
+article h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f0f0f0;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #888;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #e8e8e8;
+  margin-top: 3rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.005em;
+}
+
+p {
+  margin-bottom: 1.15rem;
+  color: #d4d4d4;
+}
+
+em {
+  font-style: italic;
+  color: #e0e0e0;
+}
+
+strong {
+  font-weight: 600;
+  color: #e8e8e8;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #444, transparent);
+  margin: 2.8rem 0;
+}
+
+.lede {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #e0e0e0;
+}
+
+.lede-first {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #f0f0f0;
+  margin-bottom: 1.5rem;
+}
+
+.pull {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #aaa;
+  border-left: 2px solid #555;
+  padding-left: 1.2rem;
+  margin: 2rem 0;
+  line-height: 1.6;
+}
+
+.closing {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-top: 2rem;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: #8ab4f8;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(138, 180, 248, 0.3);
+  transition: border-color 0.2s;
+}
+
+a:hover {
+  border-bottom-color: #8ab4f8;
+}
+
+/* Images */
+figure {
+  margin: 2.4rem 0;
+  padding: 0;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.6rem;
+  font-style: italic;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+/* Charts */
+.chart-container {
+  margin: 2.4rem 0;
+  padding: 0;
+}
+
+.chart-container svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chart-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #bbb;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.chart-source {
+  font-size: 0.75rem;
+  color: #555;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Article Footer */
+article footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+article footer p {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* Site Footer */
+.site-footer {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+/* Back link for blog posts */
+.back-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #888;
+  border-bottom: none;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #c9943e;
+  border-bottom: none;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+  article { padding: 2rem 1.2rem 4rem; }
+  .content { padding: 2rem 1.2rem 4rem; }
+  .site-header { padding: 1.5rem 1.2rem 0; }
+  h1, .hero h1, .page-title, article h1 { font-size: 1.8rem; }
+  .lede-first { font-size: 1.15rem; }
+  .pull { font-size: 1.1rem; }
+  figure { margin-left: 0; margin-right: 0; }
+  .site-header nav { gap: 1.2rem; }
+}
