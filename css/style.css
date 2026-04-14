@@ -231,6 +231,29 @@ body {
   margin-bottom: 0.3rem;
 }
 
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.project-status {
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+.project-status.live { color: #6fbf73; }
+.project-status.in-progress { color: #c9943e; }
+.project-status.local { color: #888; }
+
+.project-link {
+  font-size: 0.8rem;
+}
+
 .project-desc {
   font-size: 0.95rem;
   color: #999;
